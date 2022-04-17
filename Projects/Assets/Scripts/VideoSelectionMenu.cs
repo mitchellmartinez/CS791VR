@@ -29,10 +29,10 @@ public class VideoSelectionMenu : MonoBehaviour
     {
         switch (clip)
         {
-            case "Test":
+            case "Early":
                 videoPlayer.clip = clipList[0];
                 break;
-            case "VR":
+            case "Modern":
                 videoPlayer.clip = clipList[1];
                 break;
 
