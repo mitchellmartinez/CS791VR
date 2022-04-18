@@ -26,7 +26,6 @@ public class LightsMenu : MonoBehaviour
 
     public void Toggle(string level)
     {
-        Light localLight;
         switch (level)
         {
             case "Dim":
