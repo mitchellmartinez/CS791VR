@@ -1,10 +1,12 @@
 ToDO:
-Integrate Actual Video 
 Networked Video Player
-Network Chat 
-Redo Menu Controls 
+Locomotion controls
 Height Control
-Overhead Lights
-Wall Clock 
 
 Done: 
+Overhead Lights
+Integrate Actual Video 
+Redo Menu Controls 
+Wall Clock
+Remap Controls 
+Network Chat 
