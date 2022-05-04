@@ -1261,7 +1261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &308118645
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1451,8 +1451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 655326558}
   clipList:
-  - {fileID: 32900000, guid: fdfa533cc0752cb49a5a1720fd6b8c61, type: 3}
-  - {fileID: 32900000, guid: 27da2feb4579ba34d8639cae3d18aa7a, type: 3}
+  - {fileID: 32900000, guid: 8ccb51c831b188f46b0ff3dc7e91aa1e, type: 3}
+  - {fileID: 32900000, guid: 02a961fe48b24174ab67abfd8aecb894, type: 3}
 --- !u!114 &319669569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4132,7 +4132,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655326556}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9e483966502e51e44971bdaed056c56b, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 8ccb51c831b188f46b0ff3dc7e91aa1e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -4357,6 +4357,18 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 2042457144}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 308118644}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
