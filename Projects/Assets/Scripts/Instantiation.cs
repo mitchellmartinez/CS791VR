@@ -58,7 +58,7 @@ public class Instantiation : MonoBehaviourPunCallbacks, IInRoomCallbacks
             if (spawn.GetComponent<SpawnPointHelper>().spawnPointIndex == spawnPointIndex)
             {
                 Vector3 spawnPos = spawn.transform.position;
-                spawnPos.y = 0.0f;
+                //spawnPos.y = 0.0f;
                 Quaternion spawnRot = spawn.transform.rotation;
                 // this object is instantiated locally because it handles it's network capabilities itself
                 GameObject localPlayer = Instantiate(networkedPlayerPrefab, spawnPos, spawnRot);

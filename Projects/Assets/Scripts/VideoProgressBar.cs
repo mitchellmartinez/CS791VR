@@ -7,16 +7,36 @@ using UnityEngine.Video;
 public class VideoProgressBar : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
+    public GameObject parentSlider;
+    private Slider seek;
     private Image progress;
+    private bool onDrag = false;
 
-    private void Awake()
+    private void Start()
     {
         progress = GetComponent<Image>();
+        seek = parentSlider.GetComponent<Slider>();
     }
 
     private void Update()
     {
-        if (videoPlayer.frameCount > 0)
-            progress.fillAmount = (float)videoPlayer.frame / (float)videoPlayer.frameCount;
+        if (!onDrag)
+        { 
+            seek.value = (float)videoPlayer.time / (float)videoPlayer.length;
+        }
+        else
+        {
+            videoPlayer.time = (float)seek.value * (float)videoPlayer.length;
+        }
+    }
+
+    public void OnBeginDrag()
+    {
+        onDrag = true;
+    }
+
+    public void OnDragEnd()
+    {
+        onDrag = false;
     }
 }
